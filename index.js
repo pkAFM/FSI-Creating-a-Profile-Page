@@ -1,5 +1,7 @@
 
 let content = document.querySelector('.js-generated.content')
+content.style.margin = 'auto'
+
 
 let header = document.createElement('h1')
 header.setAttribute('class', 'dog-name')
@@ -14,6 +16,7 @@ let dogImage = document.createElement('img')
 dogImage.setAttribute('class', 'dog-image')
 dogImage.setAttribute('src', './assets/rizzo.jpg')
 dogImage.style.display = 'inline-block'
+dogImage.style.margin = '5px'
 dogImage.style.float = 'left'
 content.append(dogImage)
 
@@ -26,11 +29,13 @@ description.textContent ="Description:"
 description.style.textAlign ="left"
 description.style.display = 'inline-block'
 description.style.float = 'left'
+description.style.margin = 'auto'
 dogDetails.append(description)
 content.append(dogDetails)
 
 let para = document.createElement("p")
 para.innerText = "This gentle dog is aloof toward her owner, and never comes when called.She always acts as though any stranger she meets will harm her,and dislikes other animals."
+para.style.margin= "20px"
 content.append(para)
 
 let FeedingTimes = document.createElement('h3')
